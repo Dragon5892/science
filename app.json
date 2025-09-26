@@ -1,0 +1,28 @@
+{
+  "name": "Educational Bot",
+  "description": "AI-powered educational chatbot using Flask and Gemini API",
+  "keywords": ["flask", "python", "ai", "chatbot", "education"],
+  "website": "https://github.com/yourusername/educational-bot",
+  "repository": "https://github.com/yourusername/educational-bot",
+  "env": {
+    "SECRET_KEY": {
+      "description": "A secret key for Flask session security",
+      "generator": "secret"
+    },
+    "FLASK_ENV": {
+      "description": "Flask environment",
+      "value": "production"
+    },
+    "GEMINI_API_KEY": {
+      "description": "Google Gemini API key for AI functionality"
+    },
+    "ADMIN_PASSWORD": {
+      "description": "Admin password for the application"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
